@@ -1,0 +1,25 @@
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;400&display=swap");
+
+$base: #151515;
+$grey: #888;
+$white: #fff;
+$primary: #618faf;
+$secondary: #f8f8f8;
+$light-grey: #f8f8f8;
+$hover-bg: #547c97;
+
+$font-base: 18px;
+
+$font-family-base: "Roboto", "Libre Franklin", Helvetica, Arial, sans-serif;
+$font-family-heading-h1: "Manrope", sans-serif;
+$font-family-heading: "Libre Franklin", sans-serif;
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}

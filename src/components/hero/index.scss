@@ -1,0 +1,17 @@
+.hero-wrapper{
+    margin-top: 70px;
+    .selects-wrapper{
+        width: 50%;
+        display: flex;
+        margin: 2rem 0;
+        justify-content: space-between;
+    }
+    .variant-wrapper{
+        width: 50%;
+        margin-top: 30px;
+    }
+    .arrow-down{
+        display: flex;
+        justify-content: center;
+    }
+}

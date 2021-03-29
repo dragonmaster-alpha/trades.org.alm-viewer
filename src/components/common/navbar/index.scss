@@ -1,0 +1,73 @@
+@import "../../../styles/main.scss";
+
+.nav-bar {
+  height: 60px;
+  border-bottom: 1px solid #ececee;
+  box-shadow: none;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  a {
+    line-height: 1;
+  }
+  button {
+    background-color: transparent;
+  }
+  .logo {
+    width: 100px;
+    height: 24px;
+  }
+  .nav{
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+    // flex h-full items-center justify-between px-2 md:px-3
+  }
+
+  .drawer {
+    
+    position: absolute;
+   left: 0;
+   bottom: 0;
+   top: 0;
+    z-index: 10;
+    background-color: white;
+    width: 280px;
+    box-shadow: 0 2px 12px rgba(136, 136, 136, 0.1);
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    transform: translateX(-100%);
+    transition: all 0.25s ease-in;
+    &.active {
+      transform: translateX(0%);
+    }
+
+    .nav-items {
+      color: #000;
+      margin: 20px 0;
+      a {
+        color: inherit;
+        text-decoration: inherit;
+        display: block;
+        padding: 11px 56px 11px 18px;
+        transition: background-color 0.2s ease-in;
+        &:hover {
+          background-color: rgb(97, 143, 175);
+          transition: background-color 0.2s ease-in;
+          color: #fff !important;
+        }
+        &.active-link {
+          background-color: rgb(97, 143, 175);
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  
+}
